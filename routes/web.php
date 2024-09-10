@@ -1,5 +1,6 @@
 <?php
 use App\Http\Controllers\PlaylistController;
+use App\Http\Controllers\SongController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -9,6 +10,7 @@ Route::get('/', function () {
 
 
 Route::resource('playlist', PlaylistController::class);
+Route::resource('song', SongController::class);
 
 
 Route::get('/dashboard', function () {
